@@ -1,0 +1,75 @@
+{
+  "contracts": {
+    "Counter": {
+      "address": "0x6Ba53e61e961342B588A08b19f399Ebf927A7F89",
+      "constructorCode": "608060405234801561001057600080fd5b5060e78061001f6000396000f3fe",
+      "bodyBytecodeHash": "da93fee3ae6e3111ef0b0f82dc765580160c4c30a4aec93d908e4e6f08ce4a56",
+      "localBytecodeHash": "a7ff8f268cd6093235f45467cd873a1fa81b2830456f4458eb28747de8cdbbea",
+      "deployedBytecodeHash": "a7ff8f268cd6093235f45467cd873a1fa81b2830456f4458eb28747de8cdbbea",
+      "types": {
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Counter",
+          "path": "contracts/Counter.sol",
+          "label": "value",
+          "astId": 3,
+          "type": "t_uint256",
+          "src": "48:20:0"
+        },
+        {
+          "contract": "Counter",
+          "path": "contracts/Counter.sol",
+          "label": "number",
+          "astId": 5,
+          "type": "t_uint256",
+          "src": "74:21:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": [
+          {
+            "action": "append",
+            "updated": {
+              "index": 1,
+              "contract": "Counter",
+              "path": "contracts/Counter.sol",
+              "label": "number",
+              "astId": 5,
+              "type": "t_uint256",
+              "src": "74:21:0"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "sample-project/Counter": [
+      {
+        "address": "0xD3a0a60f7e5796d6EbA64A7cb4d2F1bFeFd3F6a2",
+        "version": "1.0.0",
+        "implementation": "0x6Ba53e61e961342B588A08b19f399Ebf927A7F89",
+        "admin": "0xE78a98886592872CD59B05Eee2CE2F725D2472aD",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0xE78a98886592872CD59B05Eee2CE2F725D2472aD"
+  }
+}
